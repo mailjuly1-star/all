@@ -1,0 +1,357 @@
+/* Question start */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.quiz {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.question {
+  margin-bottom: 20px;
+}
+.question h3 {
+  margin-top: 0;
+}
+.answer {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.answer:hover {
+  background-color: #f0f0f0;
+}
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Calculator start */
+.calculator {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.calculator input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: right;
+  outline: none;
+  border: 3px solid #007bff;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "seven eight nine divide"
+    "four five six multiply"
+    "one two three subtract"
+    "zero dot clear add"
+    "equal equal equal equal";
+  gap: 5px;
+}
+
+.buttons button {
+  padding: 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.buttons button.operator {
+  background-color: #ff9500;
+}
+
+.buttons button.operator:hover {
+  background-color: #cc7700;
+}
+
+.buttons button.clear {
+  background-color: #ff3b30;
+}
+
+.buttons button.clear:hover {
+  background-color: #cc3026;
+}
+
+/* Определяем области для каждой кнопки */
+.buttons .seven {
+  grid-area: seven;
+}
+.buttons .eight {
+  grid-area: eight;
+}
+.buttons .nine {
+  grid-area: nine;
+}
+.buttons .divide {
+  grid-area: divide;
+}
+.buttons .four {
+  grid-area: four;
+}
+.buttons .five {
+  grid-area: five;
+}
+.buttons .six {
+  grid-area: six;
+}
+.buttons .multiply {
+  grid-area: multiply;
+}
+.buttons .one {
+  grid-area: one;
+}
+.buttons .two {
+  grid-area: two;
+}
+.buttons .three {
+  grid-area: three;
+}
+.buttons .subtract {
+  grid-area: subtract;
+}
+.buttons .zero {
+  grid-area: zero;
+}
+.buttons .dot {
+  grid-area: dot;
+}
+.buttons .clear {
+  grid-area: clear;
+}
+.buttons .add {
+  grid-area: add;
+}
+.buttons .equal {
+  grid-area: equal;
+}
+
+/* Comment */
+.friends {
+  list-style-type: none;
+}
+
+.form-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea.input {
+  width: 400px;
+  height: 100px;
+}
+
+.friends {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.friend {
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.comments {
+  margin-top: 10px;
+}
+.comment {
+  margin-bottom: 5px;
+  padding: 15px 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.comment-button {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+
+/* Registration form  */
+
+.registration {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+.registration h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+h3 {
+  color: green;
+  font-size: 16px;
+}
+
+.registration input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registration-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#success-message,
+#welcome-message {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Timer  */
+.timer {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 80px;
+}
+
+.card div {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 1em;
+  color: #777;
+}
+
+/* Loader  */
+#progressInfo {
+  display: none; /* Скрываем по умолчанию */
+}
+
+#progressBar {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progressFill {
+  height: 20px;
+  background-color: #4caf50;
+  width: 0%;
+  transition: width 0.5s;
+}
+
+#notifications {
+  border: 3px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  height: 100px;
+  background-color: #eee;
+}
+
+/* Todo  */
+.todo-block,
+.todo-list {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.todo-item {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* To top button */
+#scrollToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background-color: #d13d3d;
+  padding: 10px 20px;
+}

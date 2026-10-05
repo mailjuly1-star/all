@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Git practice -Main</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<style>
+
+	</style>
+</head>
+
+<body>
+
+
+	<!--Add Children -->
+	<section>
+		<h1>Git practice</h1>
+
+		<ul id="roles-children">
+			<li class="item">Sveta</li>
+
+		</ul>
+		<input id="oneMoreChild" type="text" placeholder="Add name">
+		<button id="addChildButton">Add name</button>
+
+	</section>
+	<hr>
+
+	<!-- Add Link -->
+	<section>
+
+		<div id="weather-link"></div>
+	</section>
+	<hr>
+
+	<!-- Question -->
+	<section>
+		<div class="quiz">
+			<div class="question">
+				<h3>
+					Вопрос: Какой результат будет у выражения <code>1 + "2"</code> в
+					JavaScript?
+				</h3>
+				<div class="answer">3</div>
+				<div class="answer">"12"</div>
+				<div class="answer">12</div>
+				<div class="answer">"3"</div>
+			</div>
+			<div class="result"></div>
+		</div>
+	</section>
+	<hr>
+
+	<!-- Calculator -->
+	<section>
+		<div class="calculator">
+			<input type="text" id="display" readonly />
+
+			<div class="buttons">
+				<button class="zero number">0</button>
+				<button class="one number">1</button>
+				<button class="two number">2</button>
+				<button class="three number">3</button>
+				<button class="four number">4</button>
+				<button class="five number">5</button>
+				<button class="six number">6</button>
+				<button class="seven number">7</button>
+				<button class="eight number">8</button>
+				<button class="nine number">9</button>
+				<button class="operator">/</button>
+				<button class="operator">*</button>
+				<button class="operator">-</button>
+				<button class="number">.</button>
+				<button class="clear">C</button>
+				<button class="operator">+</button>
+				<button id="equal">=</button>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<!-- Render user -->
+	<section>
+		<div id="student-info"></div>
+	</section>
+	<hr>
+
+	<!--Leave Comments -->
+	<section>
+		<h1>Чатик для друзей</h1>
+		<ul class="friends" id="list">
+			<!-- <li class="friend">
+				<p>Сережа</p>
+				<div class="comments">
+					<p class="comment">Поболтаем?</p>
+				</div>
+			</li>
+			 -->
+		</ul>
+
+		<div class="form">
+			<h2>Оставьте комментарий</h2>
+			<div class="form-row">
+				<input type="text" id="name-input" class="input" placeholder="Введите имя" />
+			</div>
+			<div class="form-row">
+				<textarea id="comment-input" class="input" placeholder="Введите ваш комментарий"></textarea>
+				<br /><br />
+				<button class="comment-button" id="add-comment-button">
+					Добавить комментарий
+				</button>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<!-- Registration form  -->
+	<section>
+		<div class="registration">
+			<h1>Sign in / Sign up</h1>
+			<div>
+				<input type="text" id="username" placeholder="Введите логин">
+				<div id="username-error" class="error"></div>
+			</div>
+			<div>
+				<input type="password" id="password" placeholder="Введите пароль">
+				<div id="password-error" class="error"></div>
+			</div>
+			<div>
+				<input type="password" id="confirm-password" placeholder="Повторите пароль">
+				<div id="confirm-password-error" class="error"></div>
+			</div>
+			<div>
+				<input type="email" id="email" placeholder="Введите email">
+				<div id="email-error" class="error"></div>
+			</div>
+			<button class="registration-button" id="register-button">Зарегистрироваться</button>
+			<div id="success-message" class="hidden">
+				<h2>Регистрация прошла успешно!</h2>
+			</div>
+
+		</div>
+		</div>
+	</section>
+	<hr>
+	<!-- Timer form  -->
+	<section>
+		<h1>До конца акции осталось</h1>
+		<div class="timer">
+			<div class="card">
+				<div class="label">Дней</div>
+				<div id="days">00</div>
+			</div>
+			<div class="card">
+				<div class="label">Часов</div>
+				<div id="hours">00</div>
+			</div>
+			<div class="card">
+				<div class="label">Минут</div>
+				<div id="minutes">00</div>
+			</div>
+			<div class="card">
+				<div class="label">Секунд</div>
+				<div id="seconds">00</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<!-- Loader  -->
+	<section>
+		<h1>Имитация загрузки файла</h1>
+		<div id="progressInfo">
+			<div id="progressBar">
+				<div id="progressFill"></div>
+			</div>
+			<p id="progressText"></p>
+		</div>
+
+		<h2>Уведомления:</h2>
+		<div id="notifications"></div>
+
+	</section>
+	<hr>
+
+	<!-- Toggle  -->
+	<section>
+		<div>
+			<button id="toggle-btn">Press</button>
+			<button id="toggle-button">Toggle</button>
+		</div>
+		<div class="">
+			<input type="radio" id="toggle-radio">
+			<label for="toggle-radio">Toggle</label>
+			<button id="toggle-press">Press</button>
+		</div>
+	</section>
+
+	<hr>
+
+	<!-- TodoList  -->
+	<section>
+		<div class="todo-block">
+			<h2>Todo List</h2>
+			<input type="text" placeholder="Buy">
+			<button class="todo__add-btn">Add</button>
+			<ul class="todo-list"></ul>
+		</div>
+	</section>
+
+
+	<hr>
+
+	<!-- To top button  -->
+
+	<section>
+		<button id="scrollToTopButton">To top</button>
+	</section>
+
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>
